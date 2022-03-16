@@ -279,9 +279,9 @@ class KorSTSProcessor(object):
         for (i, line) in enumerate(lines[1:]):
             line = line.split("\t")
             guid = "%s-%s" % (set_type, i)
-            text_a = line[5]
-            text_b = line[6]
-            label = line[4]
+            text_a = line[0] ### 수정 ###
+            text_b = line[1] ### 수정 ###
+            label = line[2] ### 수정 ###
             if i % 1000 == 0:
                 logger.info(line)
             examples.append(InputExample(guid=guid, text_a=text_a, text_b=text_b, label=label))
