@@ -7,7 +7,7 @@
   "test_file": "klue-sts-test.tsv",
   "evaluate_test_during_training": false,
   "eval_all_checkpoints": true,
-  "save_optimizer": false,
+  "save_optimizer": true,
   "do_lower_case": false,
   "do_train": true,
   "do_eval": true,
